@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-#pgzrun flybird.py
+#pgzrun 02_flybird.py
 # V1.0 完成基本功能
 # V1.1 设置大小、初始位置在屏幕居中
 # V1.2 空格开始，空格重启

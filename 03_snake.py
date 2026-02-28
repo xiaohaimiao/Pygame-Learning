@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# pgzrun snake.py
+# pgzrun 03_snake.py
 # V1.0 完成基本功能
     # TODO:
     # V1.1 死亡提示

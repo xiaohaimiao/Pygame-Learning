@@ -1,4 +1,4 @@
-#pgzrun block.py
+#pgzrun 04_block.py
 # V1.0 基本功能
 # V1.1 结束语
 # V1.2 分数，关卡
