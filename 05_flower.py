@@ -1,9 +1,11 @@
-# pgzrun 05_flower.py
-# V1.0 基础功能
-# V1.1 地雷数量
-# V1.2 中键
-# V1.3 计时
 import random
+import pgzrun
+import os
+import pygame
+import math
+import time
+from pgzero.builtins import Actor
+os.environ["SDL_VIDEO_CENTERED"] = "1"  # 移除了多余的 ]import random
 import pgzrun
 import os
 import pygame
@@ -105,7 +107,7 @@ def draw():
             # 绘制花朵和数字（只在uncovered状态下）
             if grids[y][x]['state'] == 'uncovered':
                 if grids[y][x]['flower']:
-                    draw_cell('flower', x, y)
+                    draw_cell('mine18', x, y)
                 else:
                     count = get_surrounding_flower_count(x, y)
                     if count > 0:
