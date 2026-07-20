@@ -7,6 +7,7 @@ import math
 import time
 from pgzero.builtins import Actor
 
+
 os.environ["SDL_VIDEO_CENTERED"] = "1"
 
 WIDTH = 400
@@ -85,7 +86,7 @@ def draw():
     # 检查是否胜利
     if is_win:
         screen.draw.text("YOU WIN!", (150, 180), fontsize=50, color="white")
-        screen.draw.text("press 'space' to play again!", (270, 150), fontsize=20, color="red")
+        screen.draw.text("press 'space' to play again!", (150, 230), fontsize=30, color="red")
         return
     return
 
@@ -140,15 +141,15 @@ def on_key_down(key):
 
     if not is_break and is_win and key == keys.SPACE:
         is_break = True
-
-    if key == keys.DOWN:
-        move('down')
-    elif key == keys.UP:
-        move('up')
-    elif key == keys.RIGHT:
-        move('right')
-    elif key == keys.LEFT:
-        move('left')
+    if not is_win:
+        if key == keys.DOWN:
+            move('down')
+        elif key == keys.UP:
+            move('up')
+        elif key == keys.RIGHT:
+            move('right')
+        elif key == keys.LEFT:
+            move('left')
     
     # 移动后检查胜利
     check_win()
@@ -156,7 +157,3 @@ def on_key_down(key):
 
 # 初始化游戏
 rest()
-
-
-# 启动游戏
-pgzrun.go()

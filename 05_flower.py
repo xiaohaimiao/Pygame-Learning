@@ -6,13 +6,6 @@ import math
 import time
 from pgzero.builtins import Actor
 os.environ["SDL_VIDEO_CENTERED"] = "1"  # 移除了多余的 ]import random
-import pgzrun
-import os
-import pygame
-import math
-import time
-from pgzero.builtins import Actor
-os.environ["SDL_VIDEO_CENTERED"] = "1"  # 移除了多余的 ]
 
 grid_x_count = 44
 grid_y_count = 33
@@ -133,7 +126,6 @@ def draw():
                     (WIDTH - 125, 30),  # 增加了垂直间距
                     fontsize=30, 
                     color="red")
-
 
     # 显示游戏状态信息
     if is_game_over:

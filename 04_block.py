@@ -199,9 +199,6 @@ is_player_ready = False
 next_piece_type = None
 
 reset()
-pygame.font.init()
-chinese_font = pygame.font.SysFont("kaiti", 40)
-chinese_font2 = pygame.font.SysFont("kaiti", 100)
 
 def draw_block(block, x, y):
     colors = {
@@ -226,7 +223,9 @@ def draw_block(block, x, y):
     )
     return
 
-
+pygame.font.init()
+chinese_font = pygame.font.SysFont("kaiti", 40)
+chinese_font2 = pygame.font.SysFont("kaiti", 100)
 def draw():
     text_red = chinese_font.render("按下空格重开！", True, "red")
     text_red2 = chinese_font2.render("你突破了人类第一伦理!", True, "red")
